@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ระบบแจ้งของหาย / พบของตกหล่น - รพ.สิชล</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #f1f5f9; }
+        iframe { width: 100%; height: 100vh; height: 100dvh; border: none; display: block; }
+        #loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+                   font-family: Tahoma, sans-serif; color: #64748b; }
     </style>
 </head>
 <body>
-    <!-- นำลิงก์ยาวๆ ของ Google Web App มาวางตรง src -->
-    <iframe src="https://script.google.com/macros/s/AKfycbyKJvQ2btaPl4dAwVLfrzzwZ6JBc0_hu0Y2RS4NVB6bRhrprv1vp-fpE4CPS1WYfCKS/exec"></iframe>
+    <div id="loading">กำลังโหลด...</div>
+    <!-- นำลิงก์ Web App (/exec) มาวางตรง src -->
+    <iframe src="วางลิงก์ /exec ตรงนี้"
+            title="ระบบแจ้งของหาย รพ.สิชล"
+            onload="document.getElementById('loading').style.display='none'"></iframe>
 </body>
 </html>
